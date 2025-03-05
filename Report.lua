@@ -87,7 +87,7 @@ function action_handler(act)
         player = windower.ffxi.get_mob_by_id(actor).name
         ability = res[resource][action_id].name
         if start_categories:contains(category) and message_id~=0 then
-            text.ws = ability
+            -- text.ws = ability
             if DangersV3[ability] then
                 if DangersV3[ability].ann then
                     -- windower.send_command(windower.to_shift_jis('input /p '..ability..'!!!! '..DangersV3[ability].ann))
